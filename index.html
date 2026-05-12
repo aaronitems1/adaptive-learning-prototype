@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdaptIQ — Adaptive Learning Recommendation System</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     SCREEN 1 — LANDING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="s-landing" class="screen active">
+  <div class="wrap">
+    <nav class="landing-nav">
+      <div class="logo">
+        <div class="logo-mark">A</div>
+        <div>
+          <div class="logo-text">AdaptIQ</div>
+          <div class="logo-sub">Adaptive Learning System</div>
+        </div>
+      </div>
+      <div class="nav-badge">Research Prototype · n=132 · Northumbria 2026</div>
+    </nav>
+
+    <div class="landing-hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="hero-eyebrow">AI-Based Personalised Learning</div>
+          <h1 class="hero-h1">Your learning path,<br><em>shaped by you.</em></h1>
+          <p class="hero-lead">AdaptIQ analyses your engagement, motivation, AI usage and academic confidence to generate a personalised learning pathway — grounded in primary research from 132 higher education students.</p>
+          <button class="start-btn" onclick="goTo('quiz')">
+            <span>Start My Profile</span>
+            <div class="btn-arrow">→</div>
+          </button>
+        </div>
+
+        <div class="hero-right">
+          <div class="preview-card">
+            <div class="preview-label">Sample Student Dashboard</div>
+            <div class="preview-profile">
+              <div class="profile-dim">
+                <div class="pd-label">AI Usage</div>
+                <div class="pd-bar"><div class="pd-fill" style="width:72%;background:#f0b429"></div></div>
+                <div class="pd-val">High · 3.6/5</div>
+              </div>
+              <div class="profile-dim">
+                <div class="pd-label">Engagement</div>
+                <div class="pd-bar"><div class="pd-fill" style="width:60%;background:#06d6a0"></div></div>
+                <div class="pd-val">Moderate · 3.0/5</div>
+              </div>
+              <div class="profile-dim">
+                <div class="pd-label">Confidence</div>
+                <div class="pd-bar"><div class="pd-fill" style="width:80%;background:#4361ee"></div></div>
+                <div class="pd-val">Strong · 4.0/5</div>
+              </div>
+              <div class="profile-dim">
+                <div class="pd-label">Ethical Risk</div>
+                <div class="pd-bar"><div class="pd-fill" style="width:30%;background:#ef4565"></div></div>
+                <div class="pd-val">Low · 1.5/5</div>
+              </div>
+            </div>
+            <div class="preview-pathway">
+              <div class="pathway-icon"><i class="material-icons">launch</i></div>
+              <div class="pathway-info">
+                <div class="pathway-name">Advanced Self-Directed Track</div>
+                <div class="pathway-desc">Low ethical risk · High performance condition</div>
+              </div>
+            </div>
+            <div class="preview-recs">
+              <div class="rec-preview">
+                <div class="rec-dot" style="background:#f0b429"></div>
+                <div class="rec-preview-text">Advanced AI-assisted research tasks</div>
+                <div class="rec-conf">91%</div>
+              </div>
+              <div class="rec-preview">
+                <div class="rec-dot" style="background:#06d6a0"></div>
+                <div class="rec-preview-text">Metacognitive reflection journals</div>
+                <div class="rec-conf">84%</div>
+              </div>
+              <div class="rec-preview">
+                <div class="rec-dot" style="background:#4361ee"></div>
+                <div class="rec-preview-text">Peer-led challenge groups</div>
+                <div class="rec-conf">77%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="constructs-strip">
+    <div class="wrap">
+      <div class="cs-grid">
+        <div class="cs-card">
+          <span class="cs-icon"><i class="material-icons">smart_toy</i></span>
+          <div class="cs-name">AI Usage</div>
+          <div class="cs-finding">Significant predictor of academic performance</div>
+          <div class="cs-desc">How frequently and effectively you use AI learning tools shapes your performance outcomes — confirmed by primary survey data from 132 students.</div>
+        </div>
+        <div class="cs-card">
+          <span class="cs-icon"><i class="material-icons">flash_on</i></span>
+          <div class="cs-name">Engagement</div>
+          <div class="cs-finding">Key mediating pathway to better outcomes</div>
+          <div class="cs-desc">Behavioural, cognitive and emotional engagement in your studies. Research shows engagement is the bridge between AI tool use and academic performance.</div>
+        </div>
+        <div class="cs-card">
+          <span class="cs-icon"><i class="material-icons">grade</i></span>
+          <div class="cs-name">Academic Confidence</div>
+          <div class="cs-finding">Shapes which interventions work for you</div>
+          <div class="cs-desc">Your self-assessed academic ability and resilience. Determines which learning strategies and support levels will be most effective for your profile.</div>
+        </div>
+        <div class="cs-card">
+          <span class="cs-icon"><i class="material-icons">security</i></span>
+          <div class="cs-name">Perceived Ethical Risk</div>
+          <div class="cs-finding">Critical boundary condition on AI effectiveness</div>
+          <div class="cs-desc">Your comfort with AI data use and algorithmic fairness. Research shows high ethical risk perception reduces — and can eliminate — the academic benefit of AI learning tools.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     SCREEN 2 — QUESTIONNAIRE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="s-quiz" class="screen">
+  <div class="wrap">
+    <div class="quiz-header">
+      <button class="quiz-back" onclick="goTo('landing')">← Back</button>
+      <div class="quiz-progress-wrap">
+        <div class="qp-labels">
+          <span id="qp-section">Section 1 of 4 — AI Usage</span>
+          <span id="qp-pct">0%</span>
+        </div>
+        <div class="qp-track"><div class="qp-fill" id="qp-fill" style="width:0%"></div></div>
+      </div>
+      <div class="logo">
+        <div class="logo-mark">A</div>
+        <div class="logo-text">AdaptIQ</div>
+      </div>
+    </div>
+    <div id="quiz-body"></div>
+  </div>
+
+  <nav class="quiz-nav">
+    <div class="qnav-inner">
+      <div class="qnav-answered">
+        <span id="qa-done">0</span> of <span id="qa-total">0</span> answered in this section
+      </div>
+      <button class="qnav-btn" id="qnav-next" onclick="nextSection()">
+        Continue →
+      </button>
+    </div>
+  </nav>
+</div>
+
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     SCREEN 3 — PROCESSING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="s-processing" class="screen">
+  <div class="processing-inner">
+    <div class="proc-logo">AdaptIQ</div>
+    <h2 class="proc-title">Analysing your profile</h2>
+    <p class="proc-sub">Applying research findings from 132 students to your responses</p>
+
+    <div class="proc-steps">
+      <div class="proc-step" id="ps1">
+        <div class="proc-step-icon"><i class="material-icons">smart_toy</i></div>
+        <div class="proc-step-text">Scoring your AI usage against performance data</div>
+      </div>
+      <div class="proc-step" id="ps2">
+        <div class="proc-step-icon"><i class="material-icons">flash_on</i></div>
+        <div class="proc-step-text">Calculating your engagement pathway contribution</div>
+      </div>
+      <div class="proc-step" id="ps3">
+        <div class="proc-step-icon"><i class="material-icons">security</i></div>
+        <div class="proc-step-text">Assessing ethical risk impact on your learning outcomes</div>
+      </div>
+      <div class="proc-step" id="ps4">
+        <div class="proc-step-icon"><i class="material-icons">grade</i></div>
+        <div class="proc-step-text">Classifying your learning pathway and generating recommendations</div>
+      </div>
+      <div class="proc-step" id="ps5">
+        <div class="proc-step-icon"><i class="material-icons">bar_chart</i></div>
+        <div class="proc-step-text">Building your personalised performance projection</div>
+      </div>
+    </div>
+
+    <div class="proc-bar-wrap">
+      <div class="proc-bar"><div class="proc-bar-fill" id="proc-fill"></div></div>
+      <div class="proc-pct" id="proc-pct">0%</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     SCREEN 4 — DASHBOARD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div id="s-dashboard" class="screen">
+  <div class="wrap">
+
+    <div class="dash-header">
+      <div class="dash-logo">
+        <div class="logo-mark">A</div>
+        <div>
+          <div class="logo-text">AdaptIQ</div>
+          <div class="logo-sub">Your Learning Dashboard</div>
+        </div>
+      </div>
+      <div class="dash-student-info">
+        <div class="pathway-chip" id="dash-chip">
+          <span id="dash-chip-icon">🚀</span>
+          <span id="dash-chip-name">Loading...</span>
+        </div>
+        <button class="retake-btn" onclick="goTo('landing')">Retake Profile</button>
+      </div>
+    </div>
+
+    <div class="dash-grid">
+
+      <!-- PROFILE PANEL -->
+      <div class="panel profile-panel">
+        <div class="panel-label">Your Learning Profile</div>
+        <div class="radar-container">
+          <canvas id="radar-canvas" width="250" height="250"></canvas>
+        </div>
+        <div class="dim-scores" id="dim-scores"></div>
+      </div>
+
+      <!-- PATHWAY PANEL -->
+      <div class="panel pathway-panel">
+        <div class="panel-label">Assigned Learning Pathway</div>
+        <div class="pathway-content">
+          <div class="pathway-badge" id="pw-badge">🚀</div>
+          <div class="pathway-details">
+            <div class="pathway-title" id="pw-title">—</div>
+            <div class="pathway-subtitle" id="pw-sub">—</div>
+            <div class="pathway-explanation" id="pw-explain">—</div>
+          </div>
+        </div>
+        <div class="pathway-stats" id="pw-stats"></div>
+      </div>
+
+      <!-- RECOMMENDATIONS PANEL -->
+      <div class="panel recs-panel">
+        <div class="panel-label">Personalised Recommendations</div>
+        <div class="recs-list" id="recs-list"></div>
+      </div>
+
+      <!-- PROJECTION PANEL -->
+      <div class="panel projection-panel">
+        <div class="panel-label">Performance Projection</div>
+        <div class="chart-area">
+          <canvas id="proj-canvas" width="300" height="200"></canvas>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:16px;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <div style="width:20px;height:2px;background:var(--text3);"></div>
+            <span style="font-size:11px;color:var(--text3);">Current trajectory</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;">
+            <div style="width:20px;height:2px;background:var(--gold);"></div>
+            <span style="font-size:11px;color:var(--text3);">With AdaptIQ pathway</span>
+          </div>
+        </div>
+        <div id="proj-note" style="margin-top:12px;font-family:'DM Mono',monospace;font-size:10px;color:var(--text3);line-height:1.6;"></div>
+      </div>
+
+      <!-- ETHICAL ALERT OR GOOD PANEL -->
+      <div class="panel alert-panel hidden" id="alert-panel">
+        <div class="panel-label">Ethical Risk Alert</div>
+        <div class="alert-content">
+          <span class="alert-icon">⚠️</span>
+          <div class="alert-title">High Perceived Ethical Risk Detected</div>
+          <div class="alert-text" id="alert-text">—</div>
+          <span class="alert-stat" id="alert-stat">—</span>
+        </div>
+      </div>
+
+      <div class="panel good-panel" id="good-panel">
+        <div class="panel-label">Trust & Transparency Status</div>
+        <div class="good-content">
+          <span class="good-icon" id="good-icon">✅</span>
+          <div class="good-title" id="good-title">—</div>
+          <div class="good-text" id="good-text">—</div>
+          <span class="good-stat" id="good-stat">—</span>
+        </div>
+      </div>
+
+      <!-- NEXT STEPS -->
+      <div class="panel next-steps-panel">
+        <div class="panel-label">Your Next Three Steps</div>
+        <div class="next-steps-grid" id="next-steps"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
