@@ -574,12 +574,12 @@ function buildDashboard() {
   chip.style.color       = pw.color;
   chip.style.borderColor = pw.chipBorder;
   chip.style.background  = pw.colorDim;
-  document.getElementById('dash-chip-icon').textContent = pw.icon;
+  document.getElementById('dash-chip-icon').innerHTML = pw.icon;
   document.getElementById('dash-chip-name').textContent = pw.name;
 
   // Pathway panel
   const badge = document.getElementById('pw-badge');
-  badge.textContent    = pw.icon;
+  badge.innerHTML = pw.icon;
   badge.style.background = pw.colorDim;
 
   document.getElementById('pw-title').textContent   = pw.name;
